@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<head>
+  <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+     *{
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        background-color: antiquewhite;
+        
+       
+        
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .header .container{
+        justify-content: space-between;
+        display: flex;
+        margin-top: 5px;
+    }
+    .header .logo h1{
+       margin-left: 1cm;
+       color: antiquewhite;
+    }
+ .nav-links{
+    flex: 1;
+    text-align:end;
+    text-combine-upright:initial;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: palevioletred;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:cornflowerblue;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.main {
+ 
+  margin-top: 5px;
+}
+
+.main .mymain h1 {
+  text-align: center;
+    padding: 65px;
+    font-size: xx-large;
+  
+}
+
+
+.content{
+  display: flex;
+    margin-top: 2cm;
+    width: 100%;
+}
+.content .container{
+  display: flex;
+   
+    flex-wrap: wrap;
+}
+.content .container .analyst{
+  align-items: start;
+  margin-left: 1cm;
+}
+.content .container .front-end{
+  margin-left: 3.5cm;
+}
+.content .container .photography{
+  margin-left: 4cm;
+}
+.content .contentlink{
+  margin-top: 2cm;
+  align-items: center;
+}
+.container .contentlink {
+  align-items: center;
+  
+}
+
+#click-me-btn {
+  display:inline-block;
+  margin: auto;
+  background-color: plum; 
+  border: none;
+  margin-left: 14cm;
+  margin-bottom: 2cm;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  width: 25%;
+  transition: background-color 0.3s ease;
+}
+
+#click-me-btn:hover {
+  background-color: darkcyan; 
+  animation-name: bounce;
+  animation-duration: 0.5s;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-10px); }
+  75% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+ 
+
+
+.footer p{
+   text-align: center;
+}
+
+</style>
+</head>
+<body>
+  <section class="header">
+    <div class="container">
+    <div class="logo">
+        <h1>B.N.O</h1>
+    </div>
+    <nav>
+       
+        <div class="nav-links">
+         <menu> <ul>
+             <li><a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfolio.html">HOME</a></li>
+            
+              <li><a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfolioabout.html">ABOUT </a></li>
+              <li><a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfoliocontact.html">CONTACT</a></li>
+            </ul></menu>
+        </div>
+        </div>
+    </nav>
+</section>
+<section class="main">
+  <div class="mymain">
+
+    <h1>Services</h1>
+</div>
+</section>
+<section class="content">
+  <div class="container">
+              <div class="analyst">
+  <img src="file:///C:/Users/nyanc/OneDrive/Pictures/image/digital-marketing-plan-smm-business-online-analytical-interface-display-advertising-analyst-studying-statistical-data-brand-rating/19197304.jpg" alt="System Analyst" height="300" width="300"/>
+              <h3>System Analyst</h3>
+              <p>
+                <ul>
+                <li> Business process analysis and optimization </li>
+                <li>   Software system design and development </li>
+                <li> Feasibility studies and project management </li>
+                <li>  Data analysis and reporting </li>
+              </ul></p>
+            </div>
+          
+         <div class="front-end">
+            <img src="file:///C:/Users/nyanc/OneDrive/Pictures/image/hand-drawn-web-developers/4884785.jpg" alt="Front-end Development " height="300"  width="300"/> 
+              <h3>Front-end Development</h3>
+              <p>
+              <ul>
+                <li> Responsive website design  </li>
+                <li> HTML, CSS, and JavaScript development  </li>
+                <li> UI/UX design and prototyping  </li>
+                <li> Web animation and interaction design
+                </li>
+              </ul></p>
+            </div>
+          <div class="photography">
+            <img src="file:///C:/Users/nyanc/OneDrive/Pictures/image/logo-photography-25103.png" alt="Photography" height="300" width="300"/>
+              <h3>Photography</h3>
+              <p><ul><li> Portrait, event, and product photography</li>
+                <li> Landscape and nature photography</li>
+               <li> Studio and on-location shoots</li>
+               <li>Image editing and retouching</li></ul>
+               </p>
+            </div>
+          </div>
+        
+</section>
+        <section class="content">
+        <div class="contentlink">
+          <button id="click-me-btn">Click me</button>
+
+      
+        </div>
+        <script>
+          const button = document.getElementById('click-me-btn');
+
+button.addEventListener('click', () => {
+  window.location.href = 'file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfoliomywork.html'; // replace with your desired page URL
+});
+
+        </script>
+        
+</section>
+<section class="footer">
+    <p>Copyright &copy; 2023 Nyanchama</p>
+</section>
+    
+</body>
+</html>

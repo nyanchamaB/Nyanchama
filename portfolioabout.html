@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewppoint" content="with=device-width,initial-scale=1.0">
+  <style>
+     *{
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        background-color:rgb(49, 80, 111);
+        opacity: 0.5;
+        font-weight:bolder;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+    body:hover {
+        background-color: rgb(123, 122, 198);
+      }
+    .header{
+        justify-content: space-between;
+    }
+    .header .container{
+        justify-content: space-between;
+        display: flex;
+        margin-top: 5px;
+    }
+    .header img{
+    border-radius: 50%;
+    margin-left: 1.5cm;
+    }
+    .nav-links{
+    flex: 1;
+    text-align:end;
+    text-combine-upright:initial;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: palevioletred;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:cornflowerblue;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.subheader .sub h1{
+    text-align: center;
+    padding: 65px;
+    font-size: xx-large;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    width: 1100;
+}
+.content .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1cm;
+  
+
+}
+.content .container .myphoto{
+    margin-left: 0.5cm;
+    margin-top: 1cm;
+   
+}
+.content .container .aboutme{
+   
+    width: 600;
+  height: 900;
+  align-items: center;
+  margin-right: none;
+ 
+}
+.content .container .aboutme p{
+    text-align: left;
+   margin-left: 2cm;
+    font-weight: lighter;
+}
+.content .container .aboutme h3{
+    
+    margin-left: 3.5cm;
+}
+.more {
+    display: flex;
+    margin-top: 2cm;
+    width:1100;
+   
+
+ 
+}
+.more .container {
+    display: flex;
+   
+    flex-wrap: wrap;
+}
+.more .container .profession {
+    width: 400px;
+  height: 400px;
+  margin: 10px;
+  background-color: #eee;
+  margin-left: 2cm;
+ 
+  
+}
+.more .container .profession h3{
+  text-align: center;
+}
+.more .container .profession p{
+  text-align: center;
+  margin-top: 5px;
+}
+
+.more .container .skills{
+    width: 500px;
+  height: 400px;
+  margin: 10px;
+  background-color: #eee;
+  margin-left: 3cm;
+  
+ 
+}
+.more .container .skills h3{
+    text-align: center;
+}
+.more .container .skills p {
+    text-align: center;
+    margin-top: 5px;
+}
+.skills ul li{
+    margin-left: 22px;
+}
+
+.footer p{
+    text-align:center;
+    margin-top: 1.5cm;
+}
+.footer img{
+    background-color: aliceblue;
+    border-radius: 10px;
+    color: bisque;
+}
+
+ 
+.copyright .copyrightby p{
+    text-align: center;
+    margin-top: 40px;
+    color: antiquewhite;
+}
+</style>
+</head>
+<body>
+  <section class="header">
+    <div class="container">
+    <div class="logo">
+        <img src="file:///C:/Users/nyanc/OneDrive/Pictures/image/4851696.jpg" height="50px" width="50px"/>
+      
+       
+    </div>
+    <nav>
+       
+        <div class="nav-links">
+         <menu> <ul>
+             <li><a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfolio.html">HOME</a></li>
+             <li><a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfolioabout.html">ABOUT ME</a></li>
+              <li><a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfoliocontact.html">CONTACT</a></li>
+            </ul></menu>
+        </div>
+        </div>
+    </nav>
+</section>
+<section class="subheader">
+    <div class="sub">
+        <h1>About Me</h1>
+    </div>
+   </section>
+<section class="content">
+    <div class="container">
+   <div class="myphoto">
+   <img src="file:///C:/Users/nyanc/OneDrive/Pictures/image/homefolio.jpg" height="300" width="400"/>
+   </div>
+   <div class="aboutme">
+    <p>
+        BRENDAH NYANCHAMA,I am a highly motivated and skilled system analyst and a programmer with 5 years of experience 
+        in the field.I have a strong technical background, with expertise in a variety of programming languages 
+        and technologies. 
+        Additionally, I possess excellent problem-solving skills, communication skills, and a strong work ethic. </p> <br><br><br>
+        <h3>Education</h3><br><br>
+      <p> 2023-2022:Project manager Forward Homes<br><br>
+        2022-2021:Sytem Analyst Wema Company<br><br>
+     2021-2020:Lead in Umoja project development,system analyst kero enterprises<br><br>
+     2020-2019:Intern DEV technologies for Innovation,Portries Cure as a front-end developer<br><br>
+     2019-2015:Our Lady of Lourdes High school<br><br>
+     2014-2002:St.Peter's primary school<br><br>
+    </p>
+    </div>
+    </div>
+ </section>
+ <section class="more">
+    <div class="container">
+        <div class="profession">
+           <h3> Profession </h3>
+           <p>
+            As a system analyst and programmer,i'm responsible for analyzing and designing computer systems and software applications that meet the needs of your clients or users. Using technical knowledge and analytical skills to identify requirements, evaluate systems and software, and develop solutions that improve efficiency, productivity, and user experience.
+
+            I work closely with stakeholders to gather requirements, analyze data, and design systems that meet business needs.I'm responsible for ensuring that systems are designed and implemented efficiently, cost-effectively, and with scalability in mind.
+            
+            Highly skilled front-end developer with experience in HTML, CSS, JavaScript, and various front-end frameworks and libraries. Proven ability to design and develop user-friendly, responsive, and visually appealing web applications. Strong problem-solving skills
+             and ability to work effectively in a team. Currently seeking a challenging front-end development role to contribute to the growth and success of a dynamic organization
+           </p>
+        </div>
+        <div class="skills">
+               <h3>Skills</h3>
+               <p>
+                <ul style="list-style-type:square;">
+                    <li> Programming languages: Java, Python, JavaScript, SQL</li>
+                      <li>Web development technologies: HTML, CSS, React</li>
+                      <li> System analysis tools: Microsoft Visio</li>
+                      <li> Project management: Agile methodologies, Scrumproject planning, risk management
+                    </li>
+                </ul>
+
+               </p>
+        </div>
+ </div>
+ </section>
+<section class="footer">
+ <p>
+    Interests
+    Reading books: I am an avid reader and enjoy a wide range of genres, including fiction, non-fiction, and biographies.
+     I believe that reading helps me to broaden my knowledge, enhance my creativity, and improve my communication skills.
+     <br><br>
+    I'm a fan of kindle by amazon,<em>click below</em> and check out what they have<br><br><a href="https://www.amazon.com/s?k=kindle+books&adgrpid=141588500615&gclid=CjwKCAiAu5agBhBzEiwAdiR5tG7n9cX_bc9vFD5sxUgICc7MDW6P0LUKmccA1dBZj0o2mY2UA9_8QxoCtlEQAvD_BwE&hvadid=621618867337&hvdev=c&hvlocphy=9076838&hvnetw=g&hvqmt=b&hvrand=9354298952827439516&hvtargid=kwd-4404045622&hydadcr=27984_14525513&tag=hydglogoo-20&ref=pd_sl_7ey0wym3cb_b"><img src="file:///C:/Users/nyanc/OneDrive/Pictures/image/icons8-click-32.png"/></a>
+ </p>
+</section>
+
+<section class="copyright">
+    <div class="copyrightby">
+
+        <p>Copyright &copy; 2023 Nyanchama</p>
+    </div>
+</section>
+
+    
+</body>
+</html>

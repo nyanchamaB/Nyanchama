@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+    <title>My Portifolio</title>
+  <style>
+     *{
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .header .container{
+        justify-content: space-between;
+        display: flex;
+        margin-top: 5px;
+    }
+    .header .logo h1{
+        font-size: large;
+        font-weight: bold;
+        margin-left: 2cm;
+       color: antiquewhite;
+       width: 80px;
+  height: 80px;
+  background-image: url("file:///C:/Users/nyanc/OneDrive/Pictures/image/pexels-lincoln-collective-1403449.jpg");
+  position: relative;
+  animation: mymove 5s infinite;
+  background-size: cover;
+  text-align: center;
+}
+
+@keyframes mymove {
+  from {bottom: 0px;}
+  to {bottom:200px;}
+    }
+    .nav-links{
+    flex: 1;
+    text-align:end;
+    text-combine-upright:initial;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: palevioletred;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:cornflowerblue;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.subheader .sub h2{
+    text-align: center;
+}
+.content{
+    align-items: center;
+    margin-top: 1cm;
+}
+.content .tech{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.Photography{
+    margin-top: 1cm;
+}
+.Photography P{
+    text-align: center;
+    margin-bottom: 1cm;
+}
+.Photography .myWork{
+    align-items: center;
+    margin-left: 30%;
+}
+.mywork {display:none;}
+.footer p{
+    text-align: center;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+}
+
+</style>
+</head>
+<body>
+  <section class="header">
+    <div class="container">
+    <div class="logo">
+        <h1>B.N.O</h1>
+    </div>
+    <nav>
+       
+        <div class="nav-links">
+         <menu> <ul>
+            <a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfolio.html">HOME</a></li>
+             <li><a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfolioabout.html">ABOUT ME</a></li>
+              <li><a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfoliocontact.html">CONTACT</a></li>
+            </ul></menu>
+        </div>
+        </div>
+    </nav>
+</section>
+<section class="subheader">
+<div class="sub">
+  <h2><em>check this!!!</em></h2>
+ 
+</div> 
+</section>
+<section class="content">
+    <div class="tech">
+        <p>
+            My work involves analyzing complex business processes, translating requirements into technical specifications, and writing the code that makes software applications function as intended. I pride myself on my ability to work collaboratively with stakeholders to ensure that software applications are efficient, reliable, and user-friendly. 
+       Below is one of my projects i worked on,a social network app which we developed a modified system for Wema to enhance communication within the company </p><br><br>
+        <img src="file:///C:/Users/nyanc/OneDrive/Pictures/image/project.png" height="300" width="600"/>
+    </div>
+</section>
+<section class="Photography">
+    <p>I also spend a good time with people and keep the memories </p>
+  <div class="myWork" style="max-width:500px">
+    <img class="mywork" src="file:///C:/Users/nyanc/OneDrive/Pictures/image/austin-poon-JO_S6ewBqAk-unsplash.jpg" style="width:80%" height="400">
+  <img class="mywork" src="file:///C:/Users/nyanc/OneDrive/Pictures/image/me.jpg" style="width:80%" height="400">
+  <img class="mywork" src="file:///C:/Users/nyanc/OneDrive/Pictures/image/DSC_0277.JPG " style="width: 100%">
+  <img class="mywork" src="file:///C:/Users/nyanc/OneDrive/Pictures/image/IMG_20211023_141015_910.jpg" style="width:60%" height="400">
+  <img class="mywork" src="file:///C:/Users/nyanc/OneDrive/Pictures/image/pexels-%D0%BB%D0%B5%D0%BD%D0%B0-%D1%81%D0%B8%D0%BB%D0%B0%D0%BD%D1%82%D1%8C%D0%B5%D0%B2%D0%B0-10964053.jpg" style="width:80%" height="400">
+</div>
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mywork");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); 
+    }
+    </script>
+ 
+</section>
+<section class="footer">
+    <p><em>Thank you....</em></p>
+ 
+</section>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<head>
+    <title>My Portfolio</title>
+  <style>
+     *{
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        background-color: antiquewhite;
+      
+        
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .header .container{
+        justify-content: space-between;
+        display: flex;
+        margin-top: 5px;
+    }
+    .header img{
+      border-radius: 50%;
+      margin-left: 1.5cm;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: palevioletred;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:cornflowerblue;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.subheader .sub h1{
+    text-align: center;
+    margin-top: 3cm;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    width: 1100;
+}
+.content .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1cm;
+}
+.content .container .image{
+    margin-left: 1.5cm;
+    width: 600;
+  
+  align-items: center;
+  margin-right: 0.9cm;
+    background-image:url("file:///C:/Users/nyanc/OneDrive/Pictures/image/contactfolio.jpg");
+    position: relative;
+    background-size:cover;
+   
+    
+}
+.content .container .image p{
+    color: antiquewhite;
+    margin-top: 3cm;
+    font-weight: 200;
+    padding: 10px;
+    font-style: italic;
+}
+.content .container .mapouter{
+margin-top: 120px;
+height: 60%;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: darkcyan;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+input[type=submit]:hover {
+  background-color: darkgreen;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: antiquewhite;
+  padding: 20px;
+}
+.footer{
+    margin-top: 2cm;
+    
+}
+.footer .contact{
+margin-left: 80%;
+    align-items: flex-end;
+    margin-top: 5px;
+}
+.copyright .copyrightby p{
+    text-align: center;
+    margin-top: 40px;
+}
+.caption{
+    background-color: aliceblue;
+}
+</style>
+</head>
+<body>
+  <section class="header">
+    <div class="container">
+    <div class="logo">
+        <img src="file:///C:/Users/nyanc/OneDrive/Pictures/image/4851696.jpg" height="50px" width="50px"/>
+      
+       
+    </div>
+    <nav>
+       
+        <div class="nav-links">
+         <menu> <ul>
+             <li><a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfolio.html">HOME</a></li>
+             <li><a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfolioabout.html">ABOUT </a></li>
+              <li><a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfoliocontact.html">CONTACT</a></li>
+            </ul></menu>
+        </div>
+        </div>
+    </nav>
+</section>
+<section class="subheader">
+<div class="sub">
+  <h1>Contact Info</h1>
+ 
+</div>
+</section>
+<section class="content">
+     <div class="container">
+      <div class="image">
+     <p>You can reach me out through my email i have provided below or access my current workplace which is on the map.Am also available by phone call between 9am to 6pm.
+     </p><br><br><br><br>
+     <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" 
+        src="https://maps.google.com/maps?q=Allsops-01001&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" 
+        marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;
+            text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas
+             {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+     
+      </div>
+    
+               
+
+      <div class="container">
+        <form action="/action_page.php">
+            <h3>Contact Form</h3><br><br>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="kenya">Kenya</option>
+            <option value="south africa">South Africa</option>
+            <option value="tanzania">Tanzania</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+</section>
+<section class="footer">
+   <div class="contact">
+    <h3>Email</h3>
+     <a href ="mailto:nyanchamabrendah3@gmail.com"><img src="file:///C:/Users/nyanc/OneDrive/Pictures/image/icons8-mail-48.png"></a>
+     <br>
+    <br>
+     <img src="file:///C:/Users/nyanc/OneDrive/Pictures/image/mobile-logo-png-1336.png" height="20" width="20">
+     0799181173
+      <br><br>
+      </div>
+      
+   
+</section>
+<section class="copyright">
+    <div class="copyrightby">
+
+        <p>Copyright &copy; 2023 Nyanchama</p>
+    </div>
+</section>
+
+    </body>
+
+</html>

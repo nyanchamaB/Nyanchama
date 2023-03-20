@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My Portfolio</title>
+  <style>
+     *{
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        background-color:black;
+       
+        
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .header .container{
+        justify-content: space-between;
+        display: flex;
+        margin-top: 5px;
+    }
+    .header .logo{
+        position: relative;
+        margin-left: 2cm;
+    }
+    .header img{
+       margin-left: 1cm;
+      border-radius: 50%;
+    }
+   
+ 
+
+
+
+ .nav-links{
+    flex: 1;
+    text-align:end;
+    text-combine-upright:initial;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:cornflowerblue;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.subheader{
+  margin-top: 3cm;
+  display: flex;
+    justify-content: center;
+    width: 1100;
+}
+.subheader .container {
+  display: flex;
+    justify-content: space-between;
+    margin-top: 1cm;
+      }
+      .subheader .container .description{
+        width: 600;
+  height: 900;
+  align-items: center;
+  margin-left: 3cm;
+  color: white;
+  margin-top: 80px;
+  margin-right: 80px;
+  align-items: center;
+      }
+      .description h2{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 16px;
+
+      }
+      .description p{
+        padding: i6px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+
+      
+  .container    .image {
+        margin-right: 70px;
+        border: 10px;
+        opacity:4;
+      }
+      .image:hover:hover{
+          color: darkslateblue;
+      }
+      .content{
+        margin-top: 3cm;
+        display: flex;
+    justify-content: center;
+    width: 1100;
+   
+      }
+      .content .container {
+        display: flex;
+    justify-content: space-between;
+      }
+      .container .skills{
+        color: white;
+        width: 400;
+        font-size: large;
+        font-weight:bolder;
+        margin-left: 2cm;
+        margin-top: 2cm;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .skills h3{
+        color: cornflowerblue;
+      }
+      .container .info{
+        color: white;
+        padding: 12px;
+        font-style: italic;
+        width: 600;
+        height: 700;
+        padding: 10px;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 4cm;
+
+      }
+      .info p{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 10px;
+        
+      }
+      .learn{
+        margin-top: 3cm;
+        display: flex;
+    justify-content: center;
+    width: 1100;
+      }
+      .learn .container{
+        display: flex;
+    justify-content: space-between;
+      }
+      .container .aboutme{
+        width: 400;
+        color: white;
+        margin-left: 2cm;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .aboutme h3{
+        color: cornflowerblue;
+        text-align: center;
+      }
+      .aboutme h1{
+      font-weight: bolder;
+      text-align: center;
+        padding: 16px;
+      }
+      .aboutme a{
+        text-align: center;
+      }
+      .container.meinfo{
+        color: white;
+        width: 600;
+        margin-right: 3cm;
+        
+      }
+      .container.meinfo p{
+        color: #fff;
+      }
+      .services{
+        
+      }
+     .services h1{
+      text-align: center;
+      color: cornflowerblue;
+      margin-top: 2cm;
+     }
+     .wrapper{
+  display: grid;
+  margin: 200px 90px auto;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+@media (max-width: 600px) {
+  .wrapper{
+    margin: 150px auto;
+  }
+}
+.wrapper .box{
+  width: 250px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px;
+}
+.wrapper .box .front-face{
+  background: cornflowerblue;
+  height: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .front-face .icon{
+  height: 80px;
+  color: black;
+}
+.box .front-face .icon i{
+  font-size: 65px;
+}
+.box .front-face span,
+.box .back-face span{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.box .front-face .icon i,
+.box .front-face span{
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .back-face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 220px;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transform: translateY(110px) rotateX(-90deg);
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .back-face p{
+  margin-top: 10px;
+  text-align: justify;
+}
+.box:hover .back-face{
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+.box:hover .front-face{
+  opacity: 0;
+  transform: translateY(-110px) rotateX(90deg);
+}
+.services a{
+  text-align: center;
+  color: #4158d0;
+}
+     
+     .contact{
+      margin-top: 3cm;
+        display: flex;
+    justify-content: center;
+    width: 1100;
+     }
+     .contact .container{
+      display: flex;
+    justify-content: space-between;
+    margin-top: 1cm;
+     }
+     .contact .container img{
+      margin-left: 3cm;
+     }
+     .container .contactinfo{
+      color: white;
+      margin-left: 4cm;
+      margin-top: 2cm;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+     .contactinfo h3{
+      color: cornflowerblue;
+     }
+.footer a:link, a:visited {
+  background-color: lightseagreen;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 43%;
+  border-radius: 5px;
+  margin-top: 8%;
+  
+}
+
+a:hover, a:active {
+  background-color: darkcyan;
+}
+ .copyright .copyrightby p{
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 30px;
+ }
+</style>
+</head>
+<body>
+  <section class="header">
+    <div class="container">
+    <div class="logo">
+        <img src="file:///C:/Users/nyanc/OneDrive/Pictures/image/4851696.jpg" height="50px" width="50px"/>
+      
+       
+    </div>
+ 
+    <nav>
+       
+        <div class="nav-links">
+         <menu> <ul>
+          <li><a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfolio.html">HOME</a></li>
+              <li><a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfolioabout.html">ABOUT ME</a></li>
+              <li><a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfoliocontact.html">CONTACT</a></li>
+            </ul></menu>
+        </div>
+        </div>
+    </nav>
+</section>
+<section class="subheader">
+  <div class="container">
+    <div class="description">
+      <h2>Hey there! My name is Brendah Nyanchama  </h2>
+        <p>An enthusiastic System Analyst,Wema Consultant ,Programmmer and a Photographer currently shaping the future of software development by 
+          designing smooth user-interfaces that promote user interaction with information and data based in Kenya
+          </p>
+    </div>
+    <div class="image">
+      <img src="file:///C:/Users/nyanc/OneDrive/Pictures/image/IMG_20230214_183612_293.jpg" alt="Your Image" height="700" width="400"/>
+    </div>
+
+</div>
+</section><br><br><br><br><hr>
+<section class="content">
+ <div class="container" >
+   <div class="skills">
+    <h3>My Skills</h3>
+    <h1>SYTEM ANALYST & A PROGRAMMER
+       </h1>
+       
+   </div>
+   <div class="info">
+    <p> As a system analyst and programmer,i'm responsible for analyzing and designing computer systems and software applications that meet the needs of your clients or users.Using technical knowledge and analytical skills to identify requirements, evaluate systems and software, and develop solutions that improve efficiency, productivity, 
+      and user experience.gather requirements, analyze data, and design systems that meet business needs.I'm responsible for ensuring  that systems are designed and implemented efficiently, cost-effectively, and with scalability in mind. Highly skilled front-end developer with experience in HTML, CSS, JavaScript, and various 
+      front-end frameworks and libraries. Proven ability to design and develop user-friendly, responsive, and visually appealing web applications. Strong problem-solving skills and ability to work effectively in a team. Currently seeking a challenging front-end development role to contribute to the growth and success of a dynamic organization
+     I enjoy creating effortless user experience and designing delightful digital products. The  entire process of going from a concept to release and gathering user’s feedback on either client’s or my own products is what makes me wake up everyday! I worked with numerous clients from all around the world from early startups to well-established companies. I always seek new opportunities for cooperation on projects around interesting dashboards, design systems or landing pages.</p>
+   </div>
+   
+ </div>
+</section><br><br><br><br><hr>
+<section class="learn">
+  <div class="container">
+  <div class="aboutme">
+<h3>About Me</h3>
+<h1> Passion for Problem Solving</h1>
+<a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfolioabout.html">more-></a>
+</div>
+<div class="meinfo">
+  <p>
+     </p>
+</div>
+  </div>
+</section><br><br><br><br><hr>
+<section class="services">
+  <h1>Services</h1>
+  <div class="wrapper">
+    <div class="box">
+       <div class="front-face">
+          <div class="icon">
+            <i class='fas fa-laptop-code'></i>
+          </div>
+          <span>Web Design</span>
+       </div>
+       <div class="back-face">
+          <span>Web Design</span>
+          <p>
+            As a web designer, we offer services such as designing and developing custom websites, creating responsive and mobile-friendly designs, optimizing websites for search engines, integrating e-commerce platforms, providing website maintenance and updates, and offering consultation on design and user experience.
+          </p>
+       </div>
+    </div>
+    <div class="box">
+       <div class="front-face">
+          <div class="icon">
+             <i class="fas fa-chart-line"></i>
+          </div>
+          <span>System Analyst</span>
+       </div>
+       <div class="back-face">
+          <span>System Analyst</span>
+          <p>
+            Responsible for analyzing business processes, identifying inefficiencies, and developing solutions that 
+            improve productivity and customer satisfaction.Work closely with stakeholders to gather requirements and create technical specifications for systems that streamline
+s, reduce costs and ensuring that systems are properly implemented, tested, and maintained, and that they meet
+              industry standards and regulatory requirements.
+          </p>
+       </div>
+    </div>
+    <div class="box">
+       <div class="front-face">
+          <div class="icon">
+             <i class="fas fa-rocket"></i>
+          </div>
+          <span>Graphics</span>
+       </div>
+       <div class="back-face">
+          <span>Graphics</span>
+          <p>
+            <a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/folioservices.html">Lets learn what all is about</a>
+          </p>
+       </div>
+    </div>
+ </div><br>
+
+</section><br><br><br><br><hr>
+<section class="contact">
+  <div class="container">
+  <div class="img">
+<img src="file:///C:/Users/nyanc/OneDrive/Pictures/image/austin-poon-JO_S6ewBqAk-unsplash.jpg" height="400" width="400"/>
+  </div>
+  <div class="contactinfo">
+    <h3>we can talk</h3>
+    <h1>Let's help to build each other</h1>
+    <p>If you'd like to talk about a project you want help with or need an advice about product design, just drop me a message at in email
+      I'm currently Available for any design systems projects, dashboard designs.
+    You can also reach me out at my workplace and many other means check out for more information</p>
+  </div>
+  </div>
+</section><br><br><br><br>
+<hr>
+<section class="footer">
+ 
+ <a href="file:///C:/Users/nyanc/OneDrive/Desktop/websiteproject/portfoliocontact.html"><h3>more info</h3><img src="file:///C:/Users/nyanc/OneDrive/Pictures/image/icons8-natural-user-interface-2-16.png" height="30cm" width="30cm"/>
+</a>
+ 
+</section>
+<section class="copyright">
+    <div class="copyrightby">
+
+        <p>Copyright &copy; 2023 Nyanchama</p>
+    </div>
+</section>
+<section class="caption">
+
+</section>
+
+
+    
+</body>
+</html>
